@@ -1,3 +1,5 @@
+import random
+
 # Task
 # The provided code stub reads two integers from STDIN, a and b. Add code to print three lines where:
 
@@ -9,22 +11,11 @@
 # 8
 # -2
 # 15
-# Input Format
-# - The first line contains the first integer, a.
-# - The second line contains the second integer, b.
-# Output Format
-# - Print the three lines as explained above.
-# Sample Input 0
-# 3
-# 2
-# Sample Output 0
-# 5
-# 1
-# 6
 
 if __name__ == '__main__':
-    a = int(raw_input())
-    b = int(raw_input())
+    for i in range(0 , 5):
+        a = random.randint(1, 6)
+        b = random.randint(1, 6)
     print(a + b)
     print(a - b)
     print (a * b)
